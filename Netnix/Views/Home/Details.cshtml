@@ -1,0 +1,71 @@
+﻿@model Netnix.Models.MovieDetails
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MovieDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.releaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.releaseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.shortDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shortDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image)
+        </dd>
+        <dt>
+            <span>Director's</span> @Html.DisplayNameFor(model => model.director.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.director.name)
+        </dd>
+        <dt>
+            <span>Director's</span> @Html.DisplayNameFor(model => model.director.dateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.director.dateOfBirth)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
